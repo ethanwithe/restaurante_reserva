@@ -63,7 +63,7 @@ class ConfirmationScreen extends StatelessWidget {
           TableCell(
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child: Text('\$${reserva.precio} soles'),
+              child: Text('\S${reserva.precio} soles'),
             ),
           ),
         ],
