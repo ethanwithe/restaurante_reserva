@@ -98,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  '\S$_precioMesa soles',
+                  '\S/$_precioMesa soles',
                   style: TextStyle(fontSize: 18.0, color: Colors.green),
                 ),
                 SizedBox(height: 20.0),

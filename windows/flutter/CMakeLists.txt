@@ -55,6 +55,15 @@ list(APPEND CPP_WRAPPER_SOURCES_APP
 )
 list(TRANSFORM CPP_WRAPPER_SOURCES_APP PREPEND "${WRAPPER_ROOT}/")
 
+# Define the missing function
+function(apply_standard_settings target)
+    # Add your custom settings here
+    message(STATUS "Applying standard settings to target: ${target}")
+    # Example settings:
+    set_target_properties(${target} PROPERTIES CXX_STANDARD 11)
+    target_compile_options(${target} PRIVATE -Wall -Wextra)
+endfunction()
+
 # Wrapper sources needed for a plugin.
 add_library(flutter_wrapper_plugin STATIC
   ${CPP_WRAPPER_SOURCES_CORE}
